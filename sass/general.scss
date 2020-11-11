@@ -1,0 +1,214 @@
+body {
+
+    background-image: url("/Web/Project1/images/back75.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Henny Penny', cursive;
+    color: #FFFFFF;
+    background: rgba(145, 44, 34, 0.5);
+    text-shadow: 0 0  0.625em #FFFFFF;
+}
+
+footer p {
+    position: relative;
+    width: 100%;
+    height:2.5em;
+    margin: 0 auto;
+    color: white;
+    background-color: green;
+    text-align: center;
+
+}
+
+footer p {
+
+    top:  15.625em;
+}
+
+nav {
+
+    width: 31.25em;
+    height: 2.5em;
+    margin: 0 auto;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            width: 6.25em;
+
+            a {
+                display: block;
+                text-decoration: none;
+                background-color: rgb(46, 165, 42);
+                border: inset;
+                font-family: 'Pattaya', sans-serif;
+                text-align: center;
+                line-height: 2;
+                color: orange; 
+            }
+        }
+    }
+}
+
+
+.mainbar {
+    position: static;
+    width: 100%;
+    height: 2.5em;
+    top: initial;
+    left: initial;
+    background-color: transparent;
+}
+
+.openbtn{
+    display: none;
+}
+
+.closebtn{
+    display: none;
+}
+
+@keyframes blink {
+    50% {
+        border-color: #ff0000;
+    }
+}
+@keyframes blink2 {
+    50% {
+        border-color: greenyellow;
+    }
+}
+
+@keyframes blink3 {
+    50% {
+      opacity: 0;
+    }
+  }
+
+//////////////  responsive menu bar
+@media (max-width:600px) {
+    body {
+        background-size: 100% 100%;
+        background-repeat: repeat-y;
+    }
+
+    .openbtn {
+        display: unset;
+        cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        font-weight: bold;
+        font-size: 1.5em;
+        border-right: 1px solid #000;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #f2cc0f;
+     
+        }
+   
+       .openbtn:hover {
+        background-color: #444;
+        }
+ 
+    nav {
+        width: 100%;
+    
+
+      ul {
+        flex-direction: column;
+         
+           li {
+        width: 100%;
+          
+
+              a {
+             border-bottom: 1px solid #fff;
+            display: block;
+            text-decoration: none;
+            background-color: rgb(46, 165, 42);
+            border: inset;
+            font-family: 'Pattaya', sans-serif;
+            text-align: center;
+            line-height: 2;
+            color: orange;
+                }
+              }
+      }
+     }
+  
+    .mainbar {
+       height: 22em;
+       width: 0;
+       position: fixed;
+      /*  z-index: 1; */
+       top: 0;
+       left: 0;
+       background-color:  rgb(46, 165, 42);
+       overflow-x: hidden;
+       transition: 0.5s;
+       padding-top: 60px;
+       &-closed{
+       width: 0;
+               }
+       &-open {
+       display:block;
+       width:250px;
+              }
+     }
+  
+     .mainbar a {
+       padding: 8px 8px 8px 32px;
+       text-decoration: none;
+       font-size: 15px;
+       display: block;
+       transition: 0.3s;
+      }
+  
+     .mainbar a:hover {
+       color: #f1f1f1;
+      }
+  
+     .mainbar .closebtn {
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       font-weight:bold;
+       margin-left: 50px;
+       color:#000;
+    
+      }
+  
+       .closebtn{
+        display: block;
+    }
+      #strip {
+       transition: margin-left .5s;
+       padding: 1em;
+      }
+    }
+////////////////////////
+
+@media (max-width:1000px) { .bigBannerContainer2 {
+    display: none;
+}}
+
+
+
+////

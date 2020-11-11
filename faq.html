@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faq</title>
+    <link rel="icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="sass/css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/navBar.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .fsize {
+        font-size: 1.8vw !important;
+        font-family: "Roboto", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="strip">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+      <div id="mainbarId" class="mainbar">
+        <nav>
+          <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >×</a
+            >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Media.html">Media</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <br />
+      <div class="mainTitle">Faq</div>
+    </header>
+
+    <br /><br />
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0 bg-white">
+            <button
+              class="btn btn-link fsize"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              1. True or False: Mardi Gras in America began in New Orleans?
+            </button>
+          </h5>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse"
+          aria-labelledby="headingOne"
+          data-parent="#accordion"
+        >
+          <div class="card-body fsize">
+            False. A common misconception - Mardi Gras in America was actually
+            begun in Mobile, Ala. in 1703. A year after its (founding) in 1857,
+            members of a Mobilian mystic society brought Mardi Gras to New
+            Orleans.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0 bg-white">
+            <button
+              class="btn btn-link collapsed fsize"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              2. What medieval tradition can Mardi Gras be traced back to?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse fsize"
+          aria-labelledby="headingTwo"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Feasting before the arrival of Lent. Mardi Gras day was the last day
+            before Lent, when Catholics would give up a certain food until
+            Easter. Therefore, they would feast the day before.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0 bg-white">
+            <button
+              class="btn btn-link collapsed fsize"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              3. What does the French expression "Mardi Gras" literally
+              translate to in English?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse fsize"
+          aria-labelledby="headingThree"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Fat Tuesday. It was called so because of the feasting that took
+            place on this day.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0 bg-white">
+            <button
+              class="btn btn-link collapsed fsize"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              4. How did the Spanish add their touch to the French Mardi Gras?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseFour"
+          class="collapse fsize"
+          aria-labelledby="headingFour"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            By holding lighted torch parades. Some mystic societies today still
+            march by torchlight.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0 bg-white">
+            <button
+              class="btn btn-link collapsed fsize"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              5. What is Mardi Gras known as in the Christian calendar?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseFive"
+          class="collapse fsize"
+          aria-labelledby="headingFive"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Shrove Tuesday - the day before Lent starts. The following day, the
+            first day of lent, is known as Ash Wednesday.
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>@Powered by A.C. WebDeveplopment@</p>
+    </footer>
+  </body>
+</html>

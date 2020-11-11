@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="js/navBar.js"></script>
+    <script src="js/contact.js"> </script>
+</head>
+<body>
+    <header>
+        <div id="strip"><button class="openbtn" onclick="openNav()">☰ </button>  </div>
+        <div id="mainbarId" class="mainbar">
+            <nav>
+                <ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Media.html">Media</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div><br>
+        <div class="mainTitle">Contact Us
+        </div>
+    </header>
+    <section class="mb-4 p-4 bg-white border" style="margin-left: 20%; width:50%">
+        <p style="text-align: center;font-size: 2em; font-weight: 700;">Fill your details</p>
+        <div class="row">
+            <div class="col-md-12 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name1" name="name" class="form-control">
+                                <input type="text" id="name2" name="name" class="form-control" placeholder="Your Name">
+                                <label id="lname"  for="name" class="">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="lastname1" name="lastname" class="form-control">
+                                <input type="text" id="lastname2" name="lastname" class="form-control" placeholder="Your Lastname">
+                                <label id="llname" for="lastname" class="">Last name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email1" name="email" class="form-control">
+                                <input type="text" id="email2" name="email" class="form-control" placeholder="Your Email">
+                                <label id="lemail" for="email" class="">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message1" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                                    <textarea type="text" id="message2" name="message" rows="2"
+                                    class="form-control md-textarea" placeholder="Your Message"></textarea>
+                                <label id="ltext" for="message">Your message</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="validateForm(document.getElementById('contact-form'))">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>@Powered by A.C. WebDeveplopment@</p>
+    </footer>
+</body>
+</html>

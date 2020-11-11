@@ -1,0 +1,24 @@
+@import "general";
+
+#name2{display:none}
+#lastname2{display:none}
+#email2{display:none}
+#message2{display:none}
+
+@media (max-width: 699px) { 
+   #name1{display: none;}
+   #name2{display: block; margin-bottom: 15px;}
+   #lastname1{display: none;}
+   #lastname2{display: block; margin-bottom: 15px;}
+   #email1{display: none;}
+   #email2{display: block;margin-bottom: 15px;}
+   #message1{display: none;}
+   #message2{display: block;margin-bottom: 15px;}
+   #lname{display: none};
+   #llname{display: none};
+   #lemail{display: none};
+   #ltext{display: none};
+}
+
+
+

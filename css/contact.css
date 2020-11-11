@@ -1,0 +1,281 @@
+body {
+  background-image: url("/Web/Project1/images/back75.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Henny Penny', cursive;
+  color: #FFFFFF;
+  background: rgba(145, 44, 34, 0.5);
+  text-shadow: 0 0  0.625em #FFFFFF;
+}
+
+footer p {
+  position: relative;
+  width: 100%;
+  height: 2.5em;
+  margin: 0 auto;
+  color: white;
+  background-color: green;
+  text-align: center;
+}
+
+footer p {
+  top: 15.625em;
+}
+
+nav {
+  width: 31.25em;
+  height: 2.5em;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  width: 6.25em;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: #2ea52a;
+  border: inset;
+  font-family: 'Pattaya', sans-serif;
+  text-align: center;
+  line-height: 2;
+  color: orange;
+}
+
+.mainbar {
+  position: static;
+  width: 100%;
+  height: 2.5em;
+  top: initial;
+  left: initial;
+  background-color: transparent;
+}
+
+.openbtn {
+  display: none;
+}
+
+.closebtn {
+  display: none;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: #ff0000;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: #ff0000;
+  }
+}
+
+@-webkit-keyframes blink2 {
+  50% {
+    border-color: greenyellow;
+  }
+}
+
+@keyframes blink2 {
+  50% {
+    border-color: greenyellow;
+  }
+}
+
+@-webkit-keyframes blink3 {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink3 {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+  }
+  .openbtn {
+    display: unset;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-right: 1px solid #000;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #f2cc0f;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    border-bottom: 1px solid #fff;
+    display: block;
+    text-decoration: none;
+    background-color: #2ea52a;
+    border: inset;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    line-height: 2;
+    color: orange;
+  }
+  .mainbar {
+    height: 22em;
+    width: 0;
+    position: fixed;
+    /*  z-index: 1; */
+    top: 0;
+    left: 0;
+    background-color: #2ea52a;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .mainbar-closed {
+    width: 0;
+  }
+  .mainbar-open {
+    display: block;
+    width: 250px;
+  }
+  .mainbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .mainbar a:hover {
+    color: #f1f1f1;
+  }
+  .mainbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: #000;
+  }
+  .closebtn {
+    display: block;
+  }
+  #strip {
+    -webkit-transition: margin-left .5s;
+    transition: margin-left .5s;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bigBannerContainer2 {
+    display: none;
+  }
+}
+
+#name2 {
+  display: none;
+}
+
+#lastname2 {
+  display: none;
+}
+
+#email2 {
+  display: none;
+}
+
+#message2 {
+  display: none;
+}
+
+@media (max-width: 699px) {
+  #name1 {
+    display: none;
+  }
+  #name2 {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #lastname1 {
+    display: none;
+  }
+  #lastname2 {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #email1 {
+    display: none;
+  }
+  #email2 {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #message1 {
+    display: none;
+  }
+  #message2 {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #lname {
+    display: none;
+  }
+  #llname {
+    display: none;
+  }
+  #lemail {
+    display: none;
+  }
+  #ltext {
+    display: none;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
