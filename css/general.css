@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Web/Project1/images/back75.jpg");
+  background-image: url("/images/back82b.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -16,10 +16,9 @@ body {
 .mainTitle {
   text-align: center;
   font-size: 4em;
-  font-family: 'Henny Penny', cursive;
-  color: #FFFFFF;
+  font-family: "Henny Penny", cursive;
+  color: #ffffff;
   background: rgba(145, 44, 34, 0.5);
-  text-shadow: 0 0  0.625em #FFFFFF;
 }
 
 footer p {
@@ -28,12 +27,10 @@ footer p {
   height: 2.5em;
   margin: 0 auto;
   color: white;
-  background-color: green;
+  background-color: rgba(145, 44, 34, 0.5);
   text-align: center;
-}
-
-footer p {
   top: 15.625em;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -62,7 +59,7 @@ nav ul li a {
   text-decoration: none;
   background-color: #2ea52a;
   border: inset;
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
   text-align: center;
   line-height: 2;
   color: orange;
@@ -159,7 +156,7 @@ nav ul li a {
     text-decoration: none;
     background-color: #2ea52a;
     border: inset;
-    font-family: 'Pattaya', sans-serif;
+    font-family: "Pattaya", sans-serif;
     text-align: center;
     line-height: 2;
     color: orange;
@@ -208,8 +205,8 @@ nav ul li a {
     display: block;
   }
   #strip {
-    -webkit-transition: margin-left .5s;
-    transition: margin-left .5s;
+    -webkit-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
     padding: 1em;
   }
 }

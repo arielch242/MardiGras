@@ -3,19 +3,18 @@
 
 <head>
     <title>Index</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/countdown.css">
+    <script src="/js/countdown.js"></script>
 </head>
 <body>
     <header>
@@ -45,7 +44,7 @@
                     <img id="carouselW" class="d-block" src="images/mardi82.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img id="carouselW" class="d-block" src="images/mardi83.jpg" alt="Third slide">
+                    <img id="carouselW" class="d-block" src="images/mardi83b.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
                     <img id="carouselW" class="d-block" src="images/mardi84.jpg" alt="Fourth slide">
@@ -106,13 +105,23 @@
                 <span style="position:relative">
                     <a href="https://www.ritzcarlton.com/en/hotels/new-orleans">
                         <img src="images/sponser4.jpg" alt="Ritz-Carlton Hotel" style="width: 96%;">
-                        <span class="bannerText">Ritz-Carlton Hotel</span>
+                        <span class="bannerText">Ritz-Carlton</span>
                     </a>
                 </span>
             </div>
         </span>
+        <section class="grid-container text-center">
+            <div class="dateTitle">Mardi Gras 2021 is Tuesday, February 16.<br>
+                We're counting down the minutes!</div>
+            </div>
+             <div class="clock-a rounded bg-gradient shadow p-3 text-center mb-2">
+                <p class="mb-0 font-weight-bold text-uppercase"></p>
+                <div id="clock-b" class="countdown pt-2"></div>
+            </div>
+
+    </section>
         <footer>
-            <p>@Powered by A.C. WebDeveplopment@</p>
+            <p>© Powered by A.C. WebDev 2020 . All rights reserved. ®</p>
         </footer>
     </aside>
 
